@@ -21,7 +21,7 @@ def home():
         cursor = conn.cursor()
         cursor.execute("SELECT DATABASE();")
         result = cursor.fetchone()
-        return f"Let's learn Docker + (this is a line i have added) Attempting to connect to MySQL...\n Connected to MySQL: {result}"
+        return f"Now i have completely setup CICD pipeline via Github Actions and now i want to see the live updates on push event: {result}"
     except Exception as e:
         return f"Error: {e}"
 
